@@ -1,14 +1,30 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { BranchselectionPage } from './branchselection/branchselection.page';
+import { LoginPage } from './login/login.page';
+import { DashboardPage } from './dashboard/dashboard.page';
+import { TaskselectionPage } from './taskselection/taskselection.page';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'login',
+    component: LoginPage
+  },
+  {
+    path: 'branchselection',
+    component: BranchselectionPage
+  },
+  {
+    path: 'dashboard',
+    component: DashboardPage
+  },
+  {
+    path: 'taskselection',
+    component: TaskselectionPage
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
 ];
