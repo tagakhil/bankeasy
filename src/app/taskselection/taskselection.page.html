@@ -6,9 +6,116 @@
         </ion-buttons>
     </ion-toolbar>
 </ion-header>
-<ion-content>
+<!-- <ion-content>
     <div id="container">
         <strong>task selection page</strong>
         <ion-button (click)="dashboard()" class="btn btn-primary">back to dashboard</ion-button>
     </div>
-</ion-content>
+</ion-content> -->
+
+<super-tabs style="    text-align: center;">
+    <super-tabs-toolbar slot="top" no-border>
+        <super-tab-button style="flex: inherit; padding: 10px 10px 10px 15px">
+            <ion-label>Documents required</ion-label>
+        </super-tab-button>
+        <super-tab-button style="flex: inherit; padding: 10px">
+            <ion-label>Forms to be filled</ion-label>
+        </super-tab-button>
+        <super-tab-button style="flex: inherit;padding: 10px">
+            <ion-label>Generate Token</ion-label>
+        </super-tab-button>
+    </super-tabs-toolbar>
+    <super-tabs-container>
+        <super-tab>
+            <ion-content>
+                <div style="margin: 42px;
+                text-align: center;
+                font-weight: bolder;
+                letter-spacing: 1px;
+                word-spacing: 1px;
+                font-family: sans-serif;">
+                    For Loan foreclosure following documents are required:
+                </div>
+                <div>
+                    <div style="      margin-top: 17px;
+                    margin-bottom: 17px;
+                    font-weight: 500;
+                    text-align: center;
+                    padding: 15px;"> 1. Bring any of your ID card with photo on it </div>
+                    <div style="       margin-top: 17px;
+                    margin-bottom: 17px;
+                    font-weight: 500;
+                    text-align: center;
+                    padding: 15px;"> 2. If you are account holder, bring your passbok </div>
+                </div>
+            </ion-content>
+        </super-tab>
+        <super-tab>
+            <ion-content>
+                <div style="margin: 42px;
+                text-align: center;
+                font-weight: bolder;
+                letter-spacing: 1px;
+                word-spacing: 1px;
+                font-family: sans-serif;">
+                    For Loan foreclosure following form should be filled:
+                </div>
+                <div style="text-align: center;margin: 41px;">
+                    <div padding>
+                        <ion-item style="margin-bottom: 20px;">
+                            <ion-input name="username" type="text" placeholder="Name" [(ngModel)]="formobj.name">
+                            </ion-input>
+                        </ion-item>
+                        <ion-item style="margin-bottom: 20px;">
+                            <ion-input name="Accountnumber" placeholder="Account number" [(ngModel)]="formobj.account">
+                            </ion-input>
+                        </ion-item>
+                        <ion-item style="margin-bottom: 20px;">
+                            <ion-input name="Loannumber" placeholder="Loan number" [(ngModel)]="formobj.loannum">
+                            </ion-input>
+                        </ion-item>
+                        <ion-item style="margin-bottom: 20px;">
+                            <ion-input name="amount" placeholder="Amount willing to pay" [(ngModel)]="formobj.amount">
+                            </ion-input>
+                        </ion-item>
+                    </div>
+                    <div padding>
+                        <ion-button (click)="presentToast()">
+                            Submit</ion-button>
+                    </div>
+                </div>
+            </ion-content>
+        </super-tab>
+        <super-tab>
+            <ion-content>
+                <div style="    margin-top: 52px;">
+                    <div style="    margin-bottom: 31px;
+                    font-size: 17px;
+                    letter-spacing: 1px;"> Total Tokens generated till now: <span
+                            style="    font-weight: bold;">45</span></div>
+                    <div>
+                        <div style="    margin-bottom: 31px;
+                    font-size: 17px;
+                    letter-spacing: 1px;"> Current Token being attended: <span style="    font-weight: bold;">22</span>
+                        </div>
+                        <div style="    margin-bottom: 31px;
+                        font-size: 17px;
+                        letter-spacing: 1px;" *ngIf="tokengenerated"> Your token is: <span
+                                style="    font-weight: bold;">46</span>
+                        </div>
+                        <div style="    margin-bottom: 31px;
+                        font-size: 17px;
+                        letter-spacing: 1px;" *ngIf="tokengenerated"> Please go to counter: <span
+                                style="    font-weight: bold;">3</span>
+                            with mentioned documents
+                        </div>
+                        <ion-button (click)="generateToken()" *ngIf="!tokengenerated">
+                            Generate Token</ion-button>
+                        <ion-button (click)="dashboard()" *ngIf="tokengenerated">
+                            Go to dashboard</ion-button>
+                    </div>
+                </div>
+            </ion-content>
+        </super-tab>
+    </super-tabs-container>
+</super-tabs>
