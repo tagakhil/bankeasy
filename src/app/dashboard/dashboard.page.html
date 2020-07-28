@@ -6,9 +6,30 @@
         </ion-buttons>
     </ion-toolbar>
 </ion-header>
-<ion-content>
+<ion-content overflow-scroll=true>
     <div id="container">
         <strong>dashboard page</strong>
-        <ion-button (click)="taskselected()" class="btn btn-primary">Task selected</ion-button>
+        <div class="flex-container">
+          <div class="activeTask" (click)="taskselected()">Active Task</div>
+        </div>
+        
+        <div class="flex-container">
+          <div (click)="taskselected()">Task1</div>
+          <div (click)="taskselected()">Task2</div>
+        </div>
+        <div class="flex-container">
+          <div (click)="taskselected()">Task3</div>
+          <div (click)="taskselected()">Task4</div>
+        </div>
+        <div class="flex-container">
+          <div (click)="taskselected()">Task5</div>
+          <div (click)="taskselected()">Task6</div>
+        </div>
+        <div class="flex-container">
+          <div (click)="taskselected()">Task7</div>
+          <div (click)="taskselected()">Task8</div>
+        </div>
+
+        
     </div>
 </ion-content>
