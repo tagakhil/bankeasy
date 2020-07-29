@@ -79,8 +79,11 @@
                         </ion-item>
                     </div>
                     <div padding>
-                        <ion-button (click)="presentToast()">
-                            Submit</ion-button>
+                        <ion-button style="--color: #316eb2;
+                        --border-color: #6098d2;
+                        text-transform: none;" fill="outline" (click)="presentToast()" class="btn">Submit</ion-button>
+                        <!-- <ion-button (click)="presentToast()">
+                            Submit</ion-button> -->
                     </div>
                 </div>
             </ion-content>
@@ -108,10 +111,19 @@
                                 style="    font-weight: bold;">3</span>
                             with mentioned documents
                         </div>
-                        <ion-button (click)="generateToken()" *ngIf="!tokengenerated">
+                        <ion-button style="--color: #316eb2;
+                        --border-color: #6098d2;
+                        text-transform: none;" fill="outline" (click)="generateToken()" class="btn"
+                            *ngIf="!tokengenerated">Generate Token</ion-button>
+
+                        <ion-button style="--color: #316eb2;
+                         --border-color: #6098d2;
+                         text-transform: none;" fill="outline" (click)="dashboard()" class="btn"
+                            *ngIf="tokengenerated">Go to dashboard</ion-button>
+                        <!-- <ion-button (click)="generateToken()" *ngIf="!tokengenerated">
                             Generate Token</ion-button>
                         <ion-button (click)="dashboard()" *ngIf="tokengenerated">
-                            Go to dashboard</ion-button>
+                            Go to dashboard</ion-button> -->
                     </div>
                 </div>
             </ion-content>
