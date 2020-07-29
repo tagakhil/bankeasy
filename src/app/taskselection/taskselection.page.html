@@ -94,16 +94,17 @@
                     <div style="    margin-bottom: 31px;
                     font-size: 17px;
                     letter-spacing: 1px;"> Total Tokens generated till now: <span
-                            style="    font-weight: bold;">40</span></div>
+                            style="    font-weight: bold;">{{totalToken}}</span></div>
                     <div>
                         <div style="    margin-bottom: 31px;
                     font-size: 17px;
-                    letter-spacing: 1px;"> Current Token being attended: <span style="    font-weight: bold;">26</span>
+                    letter-spacing: 1px;"> Current Token being attended: <span
+                                style="    font-weight: bold;">{{currentToken}}</span>
                         </div>
                         <div style="    margin-bottom: 31px;
                         font-size: 17px;
                         letter-spacing: 1px;" *ngIf="tokengenerated"> Your token is: <span
-                                style="    font-weight: bold;">41</span>
+                                style="    font-weight: bold;">{{totalToken+1}}</span>
                         </div>
                         <div style="    margin-bottom: 31px;
                         font-size: 17px;

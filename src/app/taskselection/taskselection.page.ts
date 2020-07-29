@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
+import { dataService } from '../dashboard/dashboard.page.service';
+
 
 @Component({
     selector: 'app-taskselection',
@@ -15,11 +17,17 @@ export class TaskselectionPage {
         amount: ""
     }
     tokengenerated = false;
+    currentToken = 26;
+    totalToken = 40;
 
     constructor(
         private navCtrl: NavController,
-        public toastController: ToastController
-    ) { }
+        public toastController: ToastController,
+        private dataServicee: dataService
+    ) {
+        this.currentToken = this.dataServicee.getcurrentToken()
+        this.totalToken = this.dataServicee.gettotalToken()
+    }
 
     dashboard() {
         this.navCtrl.pop();

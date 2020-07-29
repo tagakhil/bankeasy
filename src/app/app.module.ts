@@ -14,6 +14,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardPage } from './dashboard/dashboard.page';
 import { TaskselectionPage } from './taskselection/taskselection.page';
 import { LoginPage } from './login/login.page';
+import { dataService } from './dashboard/dashboard.page.service';
 
 @NgModule({
   declarations: [AppComponent, BranchselectionPage, DashboardPage, TaskselectionPage, LoginPage],
@@ -26,6 +27,7 @@ import { LoginPage } from './login/login.page';
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    dataService
   ],
   bootstrap: [AppComponent]
 })
