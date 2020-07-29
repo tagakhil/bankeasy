@@ -1,19 +1,29 @@
-<ion-header [translucent]="true">
+<ion-header class="ion-no-border" [translucent]="true">
     <ion-toolbar>
-        <ion-title>
-            Bank Easy
+        <ion-title style="     text-align: center;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #2b8a94;">
+            <ion-icon name="card-outline"></ion-icon>
+            <span style="vertical-align: top;"> Bank Easy</span>
         </ion-title>
     </ion-toolbar>
 </ion-header>
 <ion-content>
     <div id="container">
-        <strong>Login</strong>
-        <ion-item style="margin-bottom: 20px;">
-            <ion-input name="mobile" type="number" placeholder="Mobile Number"> </ion-input>
-        </ion-item>
-        <ion-item style="margin-bottom: 20px;">
-            <ion-input name="pwd" type="password" placeholder="Password"></ion-input>
-        </ion-item>
-        <ion-button (click)="Login()" class="btn btn-primary">Login</ion-button>
+        <div style="       width: 62%;
+        margin: 7% 15%;">
+            <ion-img src="../../assets/login.png"></ion-img>
+        </div>
+        <div style="    margin: 40px;">
+            <ion-item style="margin-bottom: 20px;">
+                <ion-input name="mobile" type="number" placeholder="Mobile Number"> </ion-input>
+            </ion-item>
+            <ion-item style="margin-bottom: 20px;">
+                <ion-input name="pwd" type="password" placeholder="Password"></ion-input>
+            </ion-item>
+            <ion-button style="--color: #7fb0f9;
+            --border-color: #9cc2fc;" fill="outline" (click)="Login()" class="btn">Login</ion-button>
+        </div>
     </div>
 </ion-content>
