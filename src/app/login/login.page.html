@@ -22,8 +22,11 @@
             <ion-item style="margin-bottom: 20px;">
                 <ion-input name="pwd" type="password" placeholder="Password"></ion-input>
             </ion-item>
-            <ion-button style="--color: #7fb0f9;
-            --border-color: #9cc2fc;" fill="outline" (click)="Login()" class="btn">Login</ion-button>
+<!--            <ion-button style="--color: #7fb0f9;
+            --border-color: #9cc2fc;" fill="outline" (click)="Login()" class="btn">Login</ion-button>-->
+            <div class="flex-container" (click)="Login()">
+                <div class="area">Login</div>
+            </div>
         </div>
     </div>
 </ion-content>

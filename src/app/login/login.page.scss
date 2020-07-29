@@ -22,3 +22,18 @@
 #container a {
     text-decoration: none;
 }
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.flex-container > div {
+  background: linear-gradient(to bottom, #4db0d6ab, #def5f5ab);
+  width: 100%;
+  font-family: cursive;
+  margin: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 25px;
+  border-radius: 5px;
+  color: darkslategrey;
+}
