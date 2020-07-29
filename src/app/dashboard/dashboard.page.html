@@ -9,80 +9,37 @@
 <ion-content overflow-scroll=true>
 	<div id="container">
         <div class="flex-container">
-          <div class="activeTask" (click)="taskselected()">Active Task</div>
+          <div class="activeTask" (click)="taskselected()">
+            <div  Class="Task-Status">Tokens Accepted per day &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;60</div>
+            <div  Class="Task-Status">Total Tokens &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50</div>
+            <div  Class="Task-Status">Current Token Status &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;46</div>
+            <div  Class="Task-Status">Bank Working hours &nbsp;&nbsp;&nbsp;9:00 AM to 5:00 PM</div>
+            </div>
         </div>
         
         <div class="flex-container">
-          <div (click)="taskselected()">Loan
-            <div  Class="Task-Status">Tokens Accepted per day 40</div>
-            <div  Class="Task-Status">Total Tokens 27</div>
-            <div  Class="Task-Status">Current Token Status 21</div>            
-          </div>
-          <div (click)="taskselected()">Insurance
-            <div  Class="Task-Status">Tokens Accepted per day 25</div>
-            <div  Class="Task-Status">Total Tokens 18</div>
-            <div  Class="Task-Status">Current Token Status 16</div>
-          </div>
+          <div (click)="taskselected()">Loan<ion-img class="icon-svg" src="../../assets/loan.svg"></ion-img></div>
+            <div (click)="taskselected()">Insurance<ion-img class="icon-svg" src="../../assets/safety.svg"></ion-img></div>
         </div>
         <div class="flex-container">
-          <div (click)="taskselected()">Credit card
-            <div  Class="Task-Status">Tokens Accepted per day 12</div>
-            <div  Class="Task-Status">Total Tokens 10</div>
-            <div  Class="Task-Status">Current Token Status 06</div>
-          </div>
-          <div (click)="taskselected()">Debit card
-            <div  Class="Task-Status">Tokens Accepted per day 50</div>
-            <div  Class="Task-Status">Total Tokens 35</div>
-            <div  Class="Task-Status">Current Token Status 32</div>
-          </div>
+            <div (click)="taskselected()">Credit card<ion-img class="icon-svg" src="../../assets/credit-card.svg"></ion-img></div>
+            <div (click)="taskselected()">Debit card<ion-img class="icon-svg" src="../../assets/pay-card.svg"></ion-img></div>
         </div>
         <div class="flex-container">
-          <div (click)="taskselected()">Cash a Check
-            <div  Class="Task-Status">Tokens Accepted per day 65</div>
-            <div  Class="Task-Status">Total Tokens 60</div>
-            <div  Class="Task-Status">Current Token Status 54</div>
-          </div>
-          <div (click)="taskselected()">Open Account
-            <div  Class="Task-Status">Tokens Accepted per day 60</div>
-            <div  Class="Task-Status">Total Tokens 50</div>
-            <div  Class="Task-Status">Current Token Status 46</div>
-          </div>
+            <div (click)="taskselected()">Open Account<ion-img class="icon-svg" src="../../assets/banker.svg"></ion-img></div>
+             <div (click)="taskselected()">Cash a Check<ion-img class="icon-svg" src="../../assets/iconfinder_check_3338947.svg"></ion-img></div>
         </div>
         <div class="flex-container">
-          <div (click)="taskselected()">Withdraw
-            <div  Class="Task-Status">Tokens Accepted per day 25</div>
-            <div  Class="Task-Status">Total Tokens 15</div>
-            <div  Class="Task-Status">Current Token Status 11</div>
-          </div>
-          <div (click)="taskselected()">Pay Bill
-            <div  Class="Task-Status">Tokens Accepted per day 40</div>
-            <div  Class="Task-Status">Total Tokens 34</div>
-            <div  Class="Task-Status">Current Token Status 30</div>
-          </div>
+            <div (click)="taskselected()">Withdraw<ion-img class="icon-svg" src="../../assets/bank.svg"></ion-img></div>
+            <div (click)="taskselected()">Pay Bill<ion-img class="icon-svg" src="../../assets/paybills.svg"></ion-img></div>
         </div>
         <div class="flex-container">
-          <div (click)="taskselected()">Money Order
-            <div  Class="Task-Status">Tokens Accepted per day 25</div>
-            <div  Class="Task-Status">Total Tokens 5</div>
-            <div  Class="Task-Status">Current Token Status 03</div>
-          </div>
-          <div (click)="taskselected()">Meet Manager
-            <div  Class="Task-Status">Tokens Accepted per day 10</div>
-            <div  Class="Task-Status">Total Tokens 0</div>
-            <div  Class="Task-Status">Current Token Status 0</div>
-          </div>
+            <div (click)="taskselected()">Money Order<ion-img class="icon-svg" src="../../assets/moneyorder.svg"></ion-img></div>
+            <div (click)="taskselected()">Meet Manager<ion-img class="icon-svg" src="../../assets/manager.svg"></ion-img></div>
         </div>
         <div class="flex-container">
-          <div (click)="taskselected()">Complaint
-            <div  Class="Task-Status">Tokens Accepted per day 35</div>
-            <div  Class="Task-Status">Total Tokens 15</div>
-            <div  Class="Task-Status">Current Token Status 10</div>
-          </div>
-          <div (click)="taskselected()">Others
-            <div  Class="Task-Status">Tokens Accepted per day 40</div>
-            <div  Class="Task-Status">Total Tokens 26</div>
-            <div  Class="Task-Status">Current Token Status 17</div>
-          </div>
+            <div (click)="taskselected()">Complaint<ion-img class="icon-svg" src="../../assets/complaint.svg"></ion-img></div>
+            <div (click)="taskselected()">Others<ion-img class="icon-svg" src="../../assets/other.svg"></ion-img></div>
         </div>
 
         
