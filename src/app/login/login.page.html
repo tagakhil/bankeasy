@@ -7,7 +7,13 @@
 </ion-header>
 <ion-content>
     <div id="container">
-        <strong>Login page</strong>
+        <strong>Login</strong>
+        <ion-item style="margin-bottom: 20px;">
+            <ion-input name="mobile" type="number" placeholder="Mobile Number"> </ion-input>
+        </ion-item>
+        <ion-item style="margin-bottom: 20px;">
+            <ion-input name="pwd" type="password" placeholder="Password"></ion-input>
+        </ion-item>
         <ion-button (click)="Login()" class="btn btn-primary">Login</ion-button>
     </div>
 </ion-content>
