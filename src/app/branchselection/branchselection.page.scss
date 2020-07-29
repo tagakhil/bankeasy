@@ -30,20 +30,30 @@
   display: flex;
   flex-wrap: nowrap;
 }
-.flex-container > div {
+
+.flex-container>div {
   background: linear-gradient(to bottom, #4db0d6ab, #def5f5ab);
   width: 50%;
   margin: 10px;
   text-align: center;
-  line-height: 75px;
+  line-height: 55px;
   font-size: 100%;
   border-radius: 5px;
   color: darkslategrey;
 }
-.flex-container .area{
-    width: 100%;
+
+.flex-container .area {
+  width: 100%;
 }
-.flex-container .activeTask{
-    width: 100%;
-    height: 150px;
+
+.flex-container .activeTask {
+  width: 100%;
+  height: 150px;
+}
+
+.images {
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-top: 36px;
 }

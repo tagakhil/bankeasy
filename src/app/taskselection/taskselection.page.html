@@ -1,17 +1,16 @@
 <ion-header class="ion-no-border">
-    <ion-toolbar>
-        <ion-buttons slot="start">
-            <ion-back-button (click)="goback()">
-            </ion-back-button>
-        </ion-buttons>
+    <ion-toolbar style="--background: #3d9dc0;">
+        <ion-title style="     text-align: center;
+      letter-spacing: 1px;
+      color: white;
+      ">
+            <ion-icon name="return-up-back-outline" style="    float: left;
+        font-size: 24px;" (click)="goback()"></ion-icon>
+            <ion-icon name="card-outline"></ion-icon>
+            <span style="vertical-align: top;"> Things you need</span>
+        </ion-title>
     </ion-toolbar>
 </ion-header>
-<!-- <ion-content>
-    <div id="container">
-        <strong>task selection page</strong>
-        <ion-button (click)="dashboard()" class="btn btn-primary">back to dashboard</ion-button>
-    </div>
-</ion-content> -->
 
 <super-tabs style="    text-align: center;">
     <super-tabs-toolbar slot="top" no-border>

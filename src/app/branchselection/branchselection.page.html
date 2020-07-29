@@ -1,67 +1,102 @@
 <ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-buttons *ngIf='bank' slot="start">
+  <ion-toolbar style="--background: #3d9dc0;">
+    <!-- <ion-buttons *ngIf='bank' slot="start">
       <ion-back-button (click)="bank=false">
       </ion-back-button>
-    </ion-buttons>
+    </ion-buttons> -->
+    <ion-title style="     text-align: center;
+    letter-spacing: 1px;
+    color: white;
+    ">
+      <ion-icon name="return-up-back-outline" style="    float: left;
+      font-size: 24px;" *ngIf='bank' (click)="bank=false"></ion-icon>
+      <ion-icon name="card-outline"></ion-icon>
+      <span style="vertical-align: top;" *ngIf='!bank'> Select Bank</span>
+      <span style="vertical-align: top;" *ngIf='bank'> Select Branch</span>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div id="container">
-    <strong>Bank and Branch selction page</strong>
+  <div id="container" style="margin-top: 80px;">
     <div *ngIf='!bank'>
       <div class="flex-container">
-        <div (click)="bankselected()">AXIS Bank</div>
-        <div (click)="bankselected()">HDFC Bank</div>
+        <div (click)="bankselected()">
+          <ion-img src="../../assets/CitiBank.svg" class="images"></ion-img>
+        </div>
+        <div (click)="bankselected()">
+          <ion-img src="../../assets/Axis.svg" class="images"></ion-img>
+        </div>
       </div>
       <div class="flex-container">
-        <div (click)="bankselected()">SBI Bank</div>
-        <div (click)="bankselected()">HSBC Bank</div>
+        <div (click)="bankselected()">
+          <ion-img src="../../assets/HDFC.svg" class="images"></ion-img>
+        </div>
+        <div (click)="bankselected()">
+          <ion-img src="../../assets/ICICI-Bank.svg" class="images"></ion-img>
+        </div>
       </div>
       <div class="flex-container">
-        <div (click)="bankselected()">ICICI Bank</div>
-        <div (click)="bankselected()">GRAMEEN Bank</div>
+        <div (click)="bankselected()">
+          <ion-img src="../../assets/Kotak.svg" class="images"></ion-img>
+
+        </div>
+        <div (click)="bankselected()">
+          <ion-img src="../../assets/PNB.svg" class="images"></ion-img>
+        </div>
       </div>
       <div class="flex-container">
-        <div (click)="bankselected()">ANDHRA Bank</div>
-        <div (click)="bankselected()">PNB Bank</div>
+        <div (click)="bankselected()">
+          <ion-img src="../../assets/BBC.svg" class="images"></ion-img>
+        </div>
+        <div (click)="bankselected()">
+          <ion-img src="../../assets/hsbc.png" class="images"></ion-img>
+        </div>
       </div>
       <div class="flex-container">
-        <div (click)="bankselected()">SYNOVUS Bank</div>
-        <div (click)="bankselected()">TRUIST Bank</div>
+        <div (click)="bankselected()">
+          <ion-img src="../../assets/IOB.svg" class="images"></ion-img>
+        </div>
+        <div (click)="bankselected()">
+          <ion-img src="../../assets/IDS.png" class="images"></ion-img>
+        </div>
       </div>
       <div class="flex-container">
-        <div (click)="bankselected()">CITIZENS Bank</div>
-        <div (click)="bankselected()">PNC Bank</div>
+        <div (click)="bankselected()">
+          <ion-img src="../../assets/YBK.svg" class="images"></ion-img>
+        </div>
+        <div (click)="bankselected()">
+          <ion-img src="../../assets/CNB.svg" class="images"></ion-img>
+        </div>
       </div>
     </div>
+  </div>
+  <div id="container">
     <div *ngIf='bank'>
-
-        <div class="flex-container" (click)="branchselected()">
-          <div class="area">Hitech City</div>
-        </div>
-        <div class="flex-container" (click)="branchselected()">
-          <div class="area">Madhapur</div>
-        </div>
-        <div class="flex-container" (click)="branchselected()">
-          <div class="area">Gachibowli</div>
-        </div>
-        <div class="flex-container" (click)="branchselected()">
-          <div class="area">Kondapur</div>
-        </div>
-        <div class="flex-container" (click)="branchselected()">
-          <div class="area">Begumpet</div>
-        </div>
-        <div class="flex-container" (click)="branchselected()">
-          <div class="area">Hyderbad</div>
-        </div>
-        <div class="flex-container" (click)="branchselected()">
-          <div class="area">Shamshabad</div>
-        </div>
-        <div class="flex-container" (click)="branchselected()">
-          <div class="area">Secunderbad</div>
-        </div>
+      <div class="flex-container branchheight" (click)="branchselected()">
+        <div class="area">Hitech City</div>
+      </div>
+      <div class="flex-container branchheight" (click)="branchselected()">
+        <div class="area">Madhapur</div>
+      </div>
+      <div class="flex-container branchheight" (click)="branchselected()">
+        <div class="area">Gachibowli</div>
+      </div>
+      <div class="flex-container branchheight" (click)="branchselected()">
+        <div class="area">Kondapur</div>
+      </div>
+      <div class="flex-container branchheight" (click)="branchselected()">
+        <div class="area">Begumpet</div>
+      </div>
+      <div class="flex-container branchheight" (click)="branchselected()">
+        <div class="area">Hyderbad</div>
+      </div>
+      <div class="flex-container branchheight" (click)="branchselected()">
+        <div class="area">Shamshabad</div>
+      </div>
+      <div class="flex-container  branchheight" (click)="branchselected()">
+        <div class="area">Secunderbad</div>
+      </div>
 
     </div>
 
