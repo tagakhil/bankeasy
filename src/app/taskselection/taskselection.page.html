@@ -35,17 +35,17 @@
                 font-family: sans-serif;">
                     For Loan foreclosure following documents are required:
                 </div>
-                <div>
+                <div style="    text-align: initial;
+                margin: 19px;">
                     <div style="      margin-top: 17px;
                     margin-bottom: 17px;
                     font-weight: 500;
-                    text-align: center;
-                    padding: 15px;"> 1. Bring any of your ID card with photo on it </div>
+                   "> 1. Bring any of your ID card with photo on it </div>
                     <div style="       margin-top: 17px;
                     margin-bottom: 17px;
                     font-weight: 500;
-                    text-align: center;
-                    padding: 15px;"> 2. If you are account holder, bring your passbok </div>
+                    "> 2. If you are account holder, bring your &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                        &nbsp; passbok </div>
                 </div>
             </ion-content>
         </super-tab>
@@ -90,7 +90,9 @@
         </super-tab>
         <super-tab>
             <ion-content>
-                <div style="    margin-top: 52px;">
+                <div style="    margin-top: 52px;
+                text-align: start;
+                margin-left: 43px;">
                     <div style="    margin-bottom: 31px;
                     font-size: 17px;
                     letter-spacing: 1px;"> Total Tokens generated till now: <span
@@ -110,7 +112,6 @@
                         font-size: 17px;
                         letter-spacing: 1px;" *ngIf="tokengenerated"> Please go to counter: <span
                                 style="    font-weight: bold;">3</span>
-                            with mentioned documents
                         </div>
                         <ion-button style="--color: #316eb2;
                         --border-color: #6098d2;
@@ -118,7 +119,7 @@
                             *ngIf="!tokengenerated">Generate Token</ion-button>
 
                         <ion-button style="--color: #316eb2;
-                         --border-color: #6098d2;
+                         --border-color: #6098d2;    margin-left: 57px;
                          text-transform: none;" fill="outline" (click)="dashboard()" class="btn"
                             *ngIf="tokengenerated">Go to dashboard</ion-button>
                         <!-- <ion-button (click)="generateToken()" *ngIf="!tokengenerated">
