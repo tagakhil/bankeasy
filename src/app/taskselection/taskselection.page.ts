@@ -22,7 +22,8 @@ export class TaskselectionPage {
     ) { }
 
     dashboard() {
-        this.navCtrl.pop()
+        this.navCtrl.pop();
+
     }
 
     goback() {
